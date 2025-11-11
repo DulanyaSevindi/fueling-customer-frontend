@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Truck, Search, Calendar, MapPin } from "lucide-react";
+import { Truck, Search, MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 import Header from "../../components/Header.jsx";
@@ -8,67 +8,70 @@ import Footer from "../../components/Footer.jsx";
 
 export default function CustomerDashboard() {
     const navigate = useNavigate();
-
-    const [searchData, setSearchData] = useState({
-        country: "",
-        fromDate: "",
-        toDate: "",
-    });
+    const [searchCountry, setSearchCountry] = useState("");
     const [suppliers, setSuppliers] = useState([]);
-    const [showResults, setShowResults] = useState(false);
     const [loading, setLoading] = useState(false);
+    const [showResults, setShowResults] = useState(false);
 
-    // Fetch suppliers from backend
+    const user = JSON.parse(localStorage.getItem("customer") || "{}");
+
+    // ✅ Use .env API URL
+    const API_URL = import.meta.env.VITE_API_URL;
+
     const handleSearch = async () => {
-        if (!searchData.country) {
-            alert("Please enter a country");
-            return;
-        }
+        if (!searchCountry.trim()) return alert("Enter a country");
 
         setLoading(true);
         try {
-            const response = await axios.get("http://localhost:8080/api/supplier", {
-                headers: {
-                    Authorization: `Bearer ${localStorage.getItem("customerToken")}`,
-                },
+            const response = await axios.get(`${API_URL}/supplier`, {
+                headers: { Authorization: `Bearer ${localStorage.getItem("customerToken")}` },
             });
 
-            // Filter suppliers by selected country
-            const filteredSuppliers = (response.data || [])
-                .filter((supplier) =>
-                    supplier.countries.some(
-                        (c) =>
-                            c.countryName?.toLowerCase().trim() ===
-                            searchData.country.toLowerCase().trim()
-                    )
-                )
-                .map((supplier) => ({
-                    ...supplier,
-                    country: supplier.countries.find(
-                        (c) =>
-                            c.countryName?.toLowerCase().trim() ===
-                            searchData.country.toLowerCase().trim()
-                    )?.countryName,
-                }));
+            const allSuppliers = response.data;
+            let countrySuppliers = [];
 
-            setSuppliers(filteredSuppliers);
+            // Flatten all airports for searched country
+            allSuppliers.forEach((supplier) => {
+                supplier.countries?.forEach((country) => {
+                    if (country.countryName?.toLowerCase() === searchCountry.toLowerCase()) {
+                        country.airports?.forEach((airport) => {
+                            airport.prices?.forEach((price) => {
+                                countrySuppliers.push({
+                                    supplierName: supplier.supplierName,
+                                    supplierId: supplier.id,
+                                    status: supplier.status,
+                                    country: country.countryName,
+                                    airport: airport.airportName,
+                                    baseFare: price.baseFare,
+                                });
+                            });
+                        });
+                    }
+                });
+            });
+
+            // Normal customers see only the cheapest airport
+            if (!user?.canViewAllSuppliers && countrySuppliers.length > 0) {
+                const cheapest = countrySuppliers.reduce((min, curr) =>
+                    curr.baseFare < min.baseFare ? curr : min
+                );
+                countrySuppliers = [cheapest];
+            }
+
+            setSuppliers(countrySuppliers);
             setShowResults(true);
-        } catch (error) {
-            console.error("Error fetching suppliers:", error);
-            alert("Failed to fetch suppliers. Check backend, CORS, or token.");
+        } catch (err) {
+            console.error("Error fetching suppliers:", err);
+            alert("Failed to fetch suppliers");
         } finally {
             setLoading(false);
         }
     };
 
-    const handleInputChange = (e) => {
-        setSearchData({ ...searchData, [e.target.name]: e.target.value });
-    };
-
     const handleCloseResults = () => {
         setShowResults(false);
         setSuppliers([]);
-        setSearchData({ ...searchData, country: "" });
+        setSearchCountry("");
     };
 
     return (
@@ -85,7 +88,6 @@ export default function CustomerDashboard() {
                     }}
                 >
                     <div className="absolute inset-0 bg-gradient-to-br from-[#1C2554]/80 to-[#BE965B]/50"></div>
-
                     <div className="relative z-10 flex flex-col items-center justify-center h-full px-6">
                         <img
                             src="https://ftsaero.com/wp-content/uploads/2023/06/fts-logo-gold-white.png"
@@ -104,55 +106,20 @@ export default function CustomerDashboard() {
                         <div className="w-full max-w-6xl bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 relative">
                             <div className="absolute inset-0 bg-white/90 rounded-2xl"></div>
                             <div className="relative z-10 grid md:grid-cols-4 gap-6">
-                                {/* Country */}
                                 <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">
-                                        Country
-                                    </label>
+                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Country</label>
                                     <div className="relative">
                                         <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                                         <input
                                             type="text"
-                                            name="country"
-                                            value={searchData.country}
-                                            onChange={handleInputChange}
+                                            value={searchCountry}
+                                            onChange={(e) => setSearchCountry(e.target.value)}
                                             placeholder="Enter country"
                                             className="w-full pl-10 pr-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                                         />
                                     </div>
                                 </div>
 
-                                {/* From Date */}
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">From Date</label>
-                                    <div className="relative">
-                                        <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
-                                        <input
-                                            type="date"
-                                            name="fromDate"
-                                            value={searchData.fromDate}
-                                            onChange={handleInputChange}
-                                            className="w-full pl-10 pr-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
-                                        />
-                                    </div>
-                                </div>
-
-                                {/* To Date */}
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">To Date</label>
-                                    <div className="relative">
-                                        <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
-                                        <input
-                                            type="date"
-                                            name="toDate"
-                                            value={searchData.toDate}
-                                            onChange={handleInputChange}
-                                            className="w-full pl-10 pr-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
-                                        />
-                                    </div>
-                                </div>
-
-                                {/* Search Button */}
                                 <div className="flex items-end">
                                     <button
                                         onClick={handleSearch}
@@ -172,7 +139,14 @@ export default function CustomerDashboard() {
                         <div className="flex justify-between items-center mb-6">
                             <div>
                                 <h2 className="text-4xl font-bold text-gray-900 mb-1">Available Suppliers</h2>
-                                <p className="text-xl text-gray-600">{suppliers.length} results found</p>
+                                <p className="text-xl text-gray-600">
+                                    {suppliers.length} {user?.canViewAllSuppliers ? "result(s)" : "cheapest option"} found
+                                </p>
+                                {!user?.canViewAllSuppliers && suppliers.length > 0 && (
+                                    <p className="text-sm text-gray-500 mt-1">
+                                        Showing the cheapest airport option in {searchCountry}
+                                    </p>
+                                )}
                             </div>
                             <button
                                 onClick={handleCloseResults}
@@ -184,14 +158,12 @@ export default function CustomerDashboard() {
 
                         {suppliers.length > 0 ? (
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {suppliers.map((supplier) => (
+                                {suppliers.map((supplier, idx) => (
                                     <div
-                                        key={supplier.id}
+                                        key={idx}
                                         className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-[#BE965B] transform hover:-translate-y-2"
                                     >
-                                        {/* Header Gradient */}
                                         <div className="h-2 bg-gradient-to-r from-[#1C2554] to-[#BE965B]"></div>
-
                                         <div className="p-6">
                                             <div className="flex items-start justify-between mb-4">
                                                 <div className="flex items-center gap-3">
@@ -217,16 +189,30 @@ export default function CustomerDashboard() {
                                                     }`}></span>
                                                     {supplier.status === "active" ? 'Available' : 'Unavailable'}
                                                 </span>
+
+                                                {!user?.canViewAllSuppliers && (
+                                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200 ml-2">
+                                                        💰 Cheapest in Country
+                                                    </span>
+                                                )}
                                             </div>
 
-                                            <div className="flex items-center gap-2 text-gray-600 mb-5 pb-5 border-b border-gray-100">
+                                            <div className="flex items-center gap-2 text-gray-600 mb-2">
                                                 <MapPin size={18} className="text-[#BE965B]" />
-                                                <span className="text-sm font-medium">{supplier.country || "N/A"}</span>
+                                                <span className="text-sm font-medium">
+                                                    {supplier.country} - {supplier.airport}
+                                                </span>
+                                            </div>
+
+                                            <div className="mb-4">
+                                                <span className="text-gray-800 font-semibold">
+                                                    Base Price: ${supplier.baseFare}
+                                                </span>
                                             </div>
 
                                             <button
                                                 onClick={() =>
-                                                    navigate(`/supplier/${supplier.id}?country=${supplier.country}`)
+                                                    navigate(`/supplier/${supplier.supplierId}?country=${encodeURIComponent(supplier.country)}&airport=${encodeURIComponent(supplier.airport)}`)
                                                 }
                                                 className="w-full bg-gradient-to-r from-[#1C2554] to-[#BE965B] hover:from-[#BE965B] hover:to-[#1C2554] text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform group-hover:scale-105"
                                             >

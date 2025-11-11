@@ -14,7 +14,7 @@ export default function CustomerLogin() {
     // Redirect if already logged in
     useEffect(() => {
         const token = localStorage.getItem("customerToken");
-        if (token) navigate("/dashboard"); // Change this to your customer dashboard route
+        if (token) navigate("/dashboard");
     }, [navigate]);
 
     const handleLogin = async (e) => {
@@ -33,16 +33,18 @@ export default function CustomerLogin() {
             const user = res.data.user;
 
             // Only allow customers
-            if (user.role !== "user") {
+            if (user.role.toLowerCase() !== "customer") {
                 setError("Access denied. Only customers can log in here.");
                 return;
             }
+
+            // Ensure normal customers can't view all suppliers
+            user.canViewAllSuppliers = user.canViewAllSuppliers || false;
 
             // Save token & user info
             localStorage.setItem("customerToken", res.data.token);
             localStorage.setItem("customer", JSON.stringify(user));
 
-            // Navigate to customer dashboard
             navigate("/dashboard");
         } catch (err) {
             console.error(err);
@@ -55,7 +57,6 @@ export default function CustomerLogin() {
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/airport-bg.jpg')" }}>
             <div className="absolute inset-0 bg-black/60"></div>
-
             <div className="relative z-10 backdrop-blur-xl bg-white/10 rounded-2xl shadow-2xl p-8 w-full max-w-md border border-white/20 mx-4">
                 <h2 className="text-3xl font-bold text-white text-center mb-6">Customer Login</h2>
 
@@ -72,6 +73,7 @@ export default function CustomerLogin() {
                                 placeholder="customer@example.com"
                                 className="ml-2 w-full bg-transparent text-white outline-none"
                                 required
+                                autoComplete="username"
                             />
                         </div>
                     </div>
@@ -88,6 +90,7 @@ export default function CustomerLogin() {
                                 placeholder="••••••••"
                                 className="ml-2 w-full bg-transparent text-white outline-none pr-10"
                                 required
+                                autoComplete="current-password"
                             />
                             <span className="absolute right-3 cursor-pointer text-gray-300" onClick={() => setShowPassword(!showPassword)}>
                                 {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
@@ -97,9 +100,7 @@ export default function CustomerLogin() {
 
                     {/* Error */}
                     {error && (
-                        <p className="text-red-300 text-sm text-center bg-white/10 rounded-md py-1">
-                            {error}
-                        </p>
+                        <p className="text-red-300 text-sm text-center bg-white/10 rounded-md py-1">{error}</p>
                     )}
 
                     {/* Submit Button */}
@@ -112,7 +113,6 @@ export default function CustomerLogin() {
                     </button>
                 </form>
 
-                {/* Info / Optional */}
                 <p className="text-center text-sm text-gray-200 mt-5">
                     Don’t have an account?{" "}
                     <span className="text-white font-medium cursor-pointer hover:underline">
