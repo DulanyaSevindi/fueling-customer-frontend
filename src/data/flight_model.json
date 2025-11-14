@@ -1,0 +1,2862 @@
+[
+  {
+    "id": "1",
+    "manufacturer": "AERMACCHI",
+    "model_name": "SF.260"
+  },
+  {
+    "id": "2",
+    "manufacturer": "AERMACCHI",
+    "model_name": "MB-339"
+  },
+  {
+    "id": "3",
+    "manufacturer": "AERO",
+    "model_name": "Commander 560"
+  },
+  {
+    "id": "4",
+    "manufacturer": "AERO",
+    "model_name": "L-159"
+  },
+  {
+    "id": "5",
+    "manufacturer": "AERO",
+    "model_name": "COMMANDER Commander 680F"
+  },
+  {
+    "id": "6",
+    "manufacturer": "AERO",
+    "model_name": "SPACELINES 377SGT Super Guppy"
+  },
+  {
+    "id": "7",
+    "manufacturer": "AERO",
+    "model_name": "VODOCHODY L-39"
+  },
+  {
+    "id": "8",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "Alouette 2"
+  },
+  {
+    "id": "9",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "Alouette 3"
+  },
+  {
+    "id": "10",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "AS-332 Super Puma"
+  },
+  {
+    "id": "11",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "AS-332L2 Super Puma Mk2"
+  },
+  {
+    "id": "12",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "AS-350 Ecureuil"
+  },
+  {
+    "id": "13",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "AS-355 Ecureuil 2"
+  },
+  {
+    "id": "14",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "AS-365 Dauphin 2"
+  },
+  {
+    "id": "15",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "Super Frelon"
+  },
+  {
+    "id": "16",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "SA-341 Gazelle"
+  },
+  {
+    "id": "17",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "SA-315 Lama"
+  },
+  {
+    "id": "18",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "Mohawk 298"
+  },
+  {
+    "id": "19",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "SA-330 Puma"
+  },
+  {
+    "id": "20",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "SN-601 Corvette"
+  },
+  {
+    "id": "21",
+    "manufacturer": "AEROSPATIALE",
+    "model_name": "- BRITISH AEROSPACE Concorde"
+  },
+  {
+    "id": "22",
+    "manufacturer": "AEROSPOOL",
+    "model_name": "WT-9 Dynamic"
+  },
+  {
+    "id": "23",
+    "manufacturer": "AEROSTAR",
+    "model_name": "600"
+  },
+  {
+    "id": "24",
+    "manufacturer": "AEROSTAR",
+    "model_name": "200"
+  },
+  {
+    "id": "25",
+    "manufacturer": "AGUSTA",
+    "model_name": "A-109"
+  },
+  {
+    "id": "26",
+    "manufacturer": "AGUSTA",
+    "model_name": "A-119"
+  },
+  {
+    "id": "27",
+    "manufacturer": "AGUSTA",
+    "model_name": "A-129"
+  },
+  {
+    "id": "28",
+    "manufacturer": "AGUSTAWESTLAND",
+    "model_name": "AW-139"
+  },
+  {
+    "id": "29",
+    "manufacturer": "AGUSTAWESTLAND",
+    "model_name": "AW-149"
+  },
+  {
+    "id": "30",
+    "manufacturer": "AGUSTAWESTLAND",
+    "model_name": "AW-169"
+  },
+  {
+    "id": "31",
+    "manufacturer": "AGUSTAWESTLAND",
+    "model_name": "AW-189"
+  },
+  {
+    "id": "32",
+    "manufacturer": "AGUSTAWESTLAND",
+    "model_name": "AW-101"
+  },
+  {
+    "id": "33",
+    "manufacturer": "AGUSTAWESTLAND",
+    "model_name": "AH-11 Super Lynx"
+  },
+  {
+    "id": "34",
+    "manufacturer": "AIDC",
+    "model_name": "F-CK-1 Ching-Kuo"
+  },
+  {
+    "id": "35",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-330-800"
+  },
+  {
+    "id": "36",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-330-900"
+  },
+  {
+    "id": "37",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-330-700 Beluga XL"
+  },
+  {
+    "id": "38",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-319neo"
+  },
+  {
+    "id": "39",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-320neo"
+  },
+  {
+    "id": "40",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-321neo"
+  },
+  {
+    "id": "41",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-300-600"
+  },
+  {
+    "id": "42",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-300"
+  },
+  {
+    "id": "43",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-310"
+  },
+  {
+    "id": "44",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-318"
+  },
+  {
+    "id": "45",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-319"
+  },
+  {
+    "id": "46",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-320"
+  },
+  {
+    "id": "47",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-321"
+  },
+  {
+    "id": "48",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-330-200"
+  },
+  {
+    "id": "49",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-330-300"
+  },
+  {
+    "id": "50",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-340-200"
+  },
+  {
+    "id": "51",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-340-300"
+  },
+  {
+    "id": "52",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-340-500"
+  },
+  {
+    "id": "53",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-340-600"
+  },
+  {
+    "id": "54",
+    "manufacturer": "AIRBUS",
+    "model_name": "A350-800"
+  },
+  {
+    "id": "55",
+    "manufacturer": "AIRBUS",
+    "model_name": "A350-900"
+  },
+  {
+    "id": "56",
+    "manufacturer": "AIRBUS",
+    "model_name": "A350-1000"
+  },
+  {
+    "id": "57",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-380-800"
+  },
+  {
+    "id": "58",
+    "manufacturer": "AIRBUS",
+    "model_name": "A-300ST"
+  },
+  {
+    "id": "59",
+    "manufacturer": "AIRBUS",
+    "model_name": "A400M Atlas"
+  },
+  {
+    "id": "60",
+    "manufacturer": "ALENIA",
+    "model_name": "C-27J Spartan"
+  },
+  {
+    "id": "61",
+    "manufacturer": "ALENIA",
+    "model_name": "G-222"
+  },
+  {
+    "id": "62",
+    "manufacturer": "AMX",
+    "model_name": "Alenia AMX"
+  },
+  {
+    "id": "63",
+    "manufacturer": "ANTONOV",
+    "model_name": "AN-124"
+  },
+  {
+    "id": "64",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-140"
+  },
+  {
+    "id": "65",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-225 Mriya"
+  },
+  {
+    "id": "66",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-12"
+  },
+  {
+    "id": "67",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-22 Antheus"
+  },
+  {
+    "id": "68",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-24"
+  },
+  {
+    "id": "69",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-26"
+  },
+  {
+    "id": "70",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-30"
+  },
+  {
+    "id": "71",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-32 Sutlej"
+  },
+  {
+    "id": "72",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-38"
+  },
+  {
+    "id": "73",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-70"
+  },
+  {
+    "id": "74",
+    "manufacturer": "ANTONOV",
+    "model_name": "An-72"
+  },
+  {
+    "id": "75",
+    "manufacturer": "ATR",
+    "model_name": "ATR-42-300\/320"
+  },
+  {
+    "id": "76",
+    "manufacturer": "ATR",
+    "model_name": "ATR-42-500"
+  },
+  {
+    "id": "77",
+    "manufacturer": "ATR",
+    "model_name": "ATR-42-600"
+  },
+  {
+    "id": "78",
+    "manufacturer": "ATR",
+    "model_name": "ATR-72-201"
+  },
+  {
+    "id": "79",
+    "manufacturer": "ATR",
+    "model_name": "ATR-72-210"
+  },
+  {
+    "id": "80",
+    "manufacturer": "ATR",
+    "model_name": "ATR-72-500"
+  },
+  {
+    "id": "81",
+    "manufacturer": "ATR",
+    "model_name": "ATR-72-600"
+  },
+  {
+    "id": "82",
+    "manufacturer": "ATR",
+    "model_name": "ATR-42-400"
+  },
+  {
+    "id": "83",
+    "manufacturer": "AVRO",
+    "model_name": "Vulcan"
+  },
+  {
+    "id": "84",
+    "manufacturer": "BAE",
+    "model_name": "SYSTEMS Nimrod"
+  },
+  {
+    "id": "85",
+    "manufacturer": "BAE",
+    "model_name": "SYSTEMS AVRO RJ-85"
+  },
+  {
+    "id": "86",
+    "manufacturer": "BAE",
+    "model_name": "SYSTEMS AVRO RJ-100"
+  },
+  {
+    "id": "87",
+    "manufacturer": "BAE",
+    "model_name": "SYSTEMS AVRO RJ-70"
+  },
+  {
+    "id": "88",
+    "manufacturer": "BEECH",
+    "model_name": "B36TC Bonanza"
+  },
+  {
+    "id": "89",
+    "manufacturer": "BEECH",
+    "model_name": "1900"
+  },
+  {
+    "id": "90",
+    "manufacturer": "BEECH",
+    "model_name": "350 Super King Air"
+  },
+  {
+    "id": "91",
+    "manufacturer": "BEECH",
+    "model_name": "36 Bonanza (turbine)"
+  },
+  {
+    "id": "92",
+    "manufacturer": "BEECH",
+    "model_name": "100 King Air"
+  },
+  {
+    "id": "93",
+    "manufacturer": "BEECH",
+    "model_name": "200 Super King Air"
+  },
+  {
+    "id": "94",
+    "manufacturer": "BEECH",
+    "model_name": "23 Musketeer"
+  },
+  {
+    "id": "95",
+    "manufacturer": "BEECH",
+    "model_name": "Musketeer Super"
+  },
+  {
+    "id": "96",
+    "manufacturer": "BEECH",
+    "model_name": "300 Super King Air"
+  },
+  {
+    "id": "97",
+    "manufacturer": "BEECH",
+    "model_name": "33 Debonair"
+  },
+  {
+    "id": "98",
+    "manufacturer": "BEECH",
+    "model_name": "36 Bonanza (piston)"
+  },
+  {
+    "id": "99",
+    "manufacturer": "BEECH",
+    "model_name": "400 Beechjet"
+  },
+  {
+    "id": "100",
+    "manufacturer": "BEECH",
+    "model_name": "50 Twin Bonanza"
+  },
+  {
+    "id": "101",
+    "manufacturer": "BEECH",
+    "model_name": "55 Baron"
+  },
+  {
+    "id": "102",
+    "manufacturer": "BEECH",
+    "model_name": "56 Turbo Baron"
+  },
+  {
+    "id": "103",
+    "manufacturer": "BEECH",
+    "model_name": "58 Baron"
+  },
+  {
+    "id": "104",
+    "manufacturer": "BEECH",
+    "model_name": "60 Duke"
+  },
+  {
+    "id": "105",
+    "manufacturer": "BEECH",
+    "model_name": "65 Queen Air"
+  },
+  {
+    "id": "106",
+    "manufacturer": "BEECH",
+    "model_name": "70 Queen Air"
+  },
+  {
+    "id": "107",
+    "manufacturer": "BEECH",
+    "model_name": "76 Duchess"
+  },
+  {
+    "id": "108",
+    "manufacturer": "BEECH",
+    "model_name": "77 Skipper"
+  },
+  {
+    "id": "109",
+    "manufacturer": "BEECH",
+    "model_name": "80 Queen Air"
+  },
+  {
+    "id": "110",
+    "manufacturer": "BEECH",
+    "model_name": "99 Airliner"
+  },
+  {
+    "id": "111",
+    "manufacturer": "BEECH",
+    "model_name": "90 King Air"
+  },
+  {
+    "id": "112",
+    "manufacturer": "BEECH",
+    "model_name": "King Air (F90)"
+  },
+  {
+    "id": "113",
+    "manufacturer": "BEECH",
+    "model_name": "Starship"
+  },
+  {
+    "id": "114",
+    "manufacturer": "BELL",
+    "model_name": "B-206 JetRanger"
+  },
+  {
+    "id": "115",
+    "manufacturer": "BELL",
+    "model_name": "B-206LT TwinRanger"
+  },
+  {
+    "id": "116",
+    "manufacturer": "BELL",
+    "model_name": "212 Twin Huey"
+  },
+  {
+    "id": "117",
+    "manufacturer": "BELL",
+    "model_name": "B-222"
+  },
+  {
+    "id": "118",
+    "manufacturer": "BELL",
+    "model_name": "B-230"
+  },
+  {
+    "id": "119",
+    "manufacturer": "BELL",
+    "model_name": "B-407"
+  },
+  {
+    "id": "120",
+    "manufacturer": "BELL",
+    "model_name": "B-412"
+  },
+  {
+    "id": "121",
+    "manufacturer": "BELL",
+    "model_name": "B-427"
+  },
+  {
+    "id": "122",
+    "manufacturer": "BELL",
+    "model_name": "B-429"
+  },
+  {
+    "id": "123",
+    "manufacturer": "BELL",
+    "model_name": "B-430"
+  },
+  {
+    "id": "124",
+    "manufacturer": "BELL",
+    "model_name": "47G Trooper"
+  },
+  {
+    "id": "125",
+    "manufacturer": "BELL",
+    "model_name": "47J Ranger"
+  },
+  {
+    "id": "126",
+    "manufacturer": "BELL",
+    "model_name": "B-505 Jet Ranger X"
+  },
+  {
+    "id": "127",
+    "manufacturer": "BELL",
+    "model_name": "SuperTransport"
+  },
+  {
+    "id": "128",
+    "manufacturer": "BELL",
+    "model_name": "AH-1 Cobra"
+  },
+  {
+    "id": "129",
+    "manufacturer": "BELL",
+    "model_name": "SuperCobra"
+  },
+  {
+    "id": "130",
+    "manufacturer": "BELL",
+    "model_name": "UH-1 Iroquois"
+  },
+  {
+    "id": "131",
+    "manufacturer": "BELL",
+    "model_name": "UH-1Y Venom"
+  },
+  {
+    "id": "132",
+    "manufacturer": "BELL-BOEING",
+    "model_name": "V-22"
+  },
+  {
+    "id": "133",
+    "manufacturer": "BERIEV",
+    "model_name": "A-50"
+  },
+  {
+    "id": "134",
+    "manufacturer": "BERIEV",
+    "model_name": "Be-12 Tchaika"
+  },
+  {
+    "id": "135",
+    "manufacturer": "BERIEV",
+    "model_name": "Be-200 Altair"
+  },
+  {
+    "id": "136",
+    "manufacturer": "BERIEV",
+    "model_name": "A-40 Albatross"
+  },
+  {
+    "id": "137",
+    "manufacturer": "BOEING",
+    "model_name": "737 MAX 8"
+  },
+  {
+    "id": "138",
+    "manufacturer": "BOEING",
+    "model_name": "737 MAX 9"
+  },
+  {
+    "id": "139",
+    "manufacturer": "BOEING",
+    "model_name": "B-52 Stratofortress"
+  },
+  {
+    "id": "140",
+    "manufacturer": "BOEING",
+    "model_name": "707-100"
+  },
+  {
+    "id": "141",
+    "manufacturer": "BOEING",
+    "model_name": "707-300"
+  },
+  {
+    "id": "142",
+    "manufacturer": "BOEING",
+    "model_name": "717-200"
+  },
+  {
+    "id": "143",
+    "manufacturer": "BOEING",
+    "model_name": "727-100"
+  },
+  {
+    "id": "144",
+    "manufacturer": "BOEING",
+    "model_name": "727-200"
+  },
+  {
+    "id": "145",
+    "manufacturer": "BOEING",
+    "model_name": "737-100"
+  },
+  {
+    "id": "146",
+    "manufacturer": "BOEING",
+    "model_name": "737-200"
+  },
+  {
+    "id": "147",
+    "manufacturer": "BOEING",
+    "model_name": "737-300"
+  },
+  {
+    "id": "148",
+    "manufacturer": "BOEING",
+    "model_name": "737-400"
+  },
+  {
+    "id": "149",
+    "manufacturer": "BOEING",
+    "model_name": "737-500"
+  },
+  {
+    "id": "150",
+    "manufacturer": "BOEING",
+    "model_name": "737-600"
+  },
+  {
+    "id": "151",
+    "manufacturer": "BOEING",
+    "model_name": "737-700"
+  },
+  {
+    "id": "152",
+    "manufacturer": "BOEING",
+    "model_name": "737-800"
+  },
+  {
+    "id": "153",
+    "manufacturer": "BOEING",
+    "model_name": "737-900"
+  },
+  {
+    "id": "154",
+    "manufacturer": "BOEING",
+    "model_name": "747-100"
+  },
+  {
+    "id": "155",
+    "manufacturer": "BOEING",
+    "model_name": "747-200"
+  },
+  {
+    "id": "156",
+    "manufacturer": "BOEING",
+    "model_name": "747-300"
+  },
+  {
+    "id": "157",
+    "manufacturer": "\"BOEING",
+    "model_name": "747-400 (international"
+  },
+  {
+    "id": "158",
+    "manufacturer": "BOEING",
+    "model_name": "747-8"
+  },
+  {
+    "id": "159",
+    "manufacturer": "\"BOEING",
+    "model_name": "747-400 (domestic"
+  },
+  {
+    "id": "160",
+    "manufacturer": "BOEING",
+    "model_name": "747SR"
+  },
+  {
+    "id": "161",
+    "manufacturer": "BOEING",
+    "model_name": "747SP"
+  },
+  {
+    "id": "162",
+    "manufacturer": "BOEING",
+    "model_name": "757-200"
+  },
+  {
+    "id": "163",
+    "manufacturer": "BOEING",
+    "model_name": "757-300"
+  },
+  {
+    "id": "164",
+    "manufacturer": "BOEING",
+    "model_name": "767-200ER"
+  },
+  {
+    "id": "165",
+    "manufacturer": "BOEING",
+    "model_name": "767-300ER"
+  },
+  {
+    "id": "166",
+    "manufacturer": "BOEING",
+    "model_name": "767-400"
+  },
+  {
+    "id": "167",
+    "manufacturer": "BOEING",
+    "model_name": "777-200 \/ 777-200ER"
+  },
+  {
+    "id": "168",
+    "manufacturer": "BOEING",
+    "model_name": "777-300"
+  },
+  {
+    "id": "169",
+    "manufacturer": "BOEING",
+    "model_name": "777-200LR and 777-F"
+  },
+  {
+    "id": "170",
+    "manufacturer": "BOEING",
+    "model_name": "777-300ER"
+  },
+  {
+    "id": "171",
+    "manufacturer": "BOEING",
+    "model_name": "787-8 Dreamliner"
+  },
+  {
+    "id": "172",
+    "manufacturer": "BOEING",
+    "model_name": "787-9 Dreamliner"
+  },
+  {
+    "id": "173",
+    "manufacturer": "BOEING",
+    "model_name": "747 LCF"
+  },
+  {
+    "id": "174",
+    "manufacturer": "BOEING",
+    "model_name": "C-135 Stratolifter"
+  },
+  {
+    "id": "175",
+    "manufacturer": "BOEING",
+    "model_name": "C-17 Globemaster 3"
+  },
+  {
+    "id": "176",
+    "manufacturer": "BOEING",
+    "model_name": "C-97 Stratofreighter"
+  },
+  {
+    "id": "177",
+    "manufacturer": "BOEING",
+    "model_name": "E-3D Sentry"
+  },
+  {
+    "id": "178",
+    "manufacturer": "BOEING",
+    "model_name": "E-3 Sentry"
+  },
+  {
+    "id": "179",
+    "manufacturer": "BOEING",
+    "model_name": "E-6 Mercury"
+  },
+  {
+    "id": "180",
+    "manufacturer": "BOEING",
+    "model_name": "737-700 AEWC"
+  },
+  {
+    "id": "181",
+    "manufacturer": "BOEING",
+    "model_name": "F-15 Strike Eagle"
+  },
+  {
+    "id": "182",
+    "manufacturer": "BOEING",
+    "model_name": "F-18 Hornet"
+  },
+  {
+    "id": "183",
+    "manufacturer": "BOEING",
+    "model_name": "Chinook"
+  },
+  {
+    "id": "184",
+    "manufacturer": "BOEING",
+    "model_name": "KC-135"
+  },
+  {
+    "id": "185",
+    "manufacturer": "BOEING",
+    "model_name": "KC-135"
+  },
+  {
+    "id": "186",
+    "manufacturer": "BOEING",
+    "model_name": "RC-135"
+  },
+  {
+    "id": "187",
+    "manufacturer": "BOEING",
+    "model_name": "787-10 Dreamliner"
+  },
+  {
+    "id": "188",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "BD-500 CSeries CS100"
+  },
+  {
+    "id": "189",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "BD-500 CSeries CS300"
+  },
+  {
+    "id": "190",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Challenger 300"
+  },
+  {
+    "id": "191",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Challenger 600"
+  },
+  {
+    "id": "192",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Regional Jet CRJ-100"
+  },
+  {
+    "id": "193",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Regional Jet CRJ-200"
+  },
+  {
+    "id": "194",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Regional Jet CRJ-700"
+  },
+  {
+    "id": "195",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Regional Jet CRJ-900"
+  },
+  {
+    "id": "196",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Regional Jet CRJ-1000"
+  },
+  {
+    "id": "197",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Dash 8 Q200"
+  },
+  {
+    "id": "198",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Dash 8 Q300"
+  },
+  {
+    "id": "199",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Dash 8 Q400"
+  },
+  {
+    "id": "200",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Global 5000"
+  },
+  {
+    "id": "201",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Global 7000"
+  },
+  {
+    "id": "202",
+    "manufacturer": "BOMBARDIER",
+    "model_name": "Global Express"
+  },
+  {
+    "id": "203",
+    "manufacturer": "BREGUET",
+    "model_name": "1150 Atlantic"
+  },
+  {
+    "id": "204",
+    "manufacturer": "BRITISH",
+    "model_name": "AEROSPACE ATP"
+  },
+  {
+    "id": "205",
+    "manufacturer": "BRITISH",
+    "model_name": "AEROSPACE BAe-146-100"
+  },
+  {
+    "id": "206",
+    "manufacturer": "BRITISH",
+    "model_name": "AEROSPACE BAe-146-200"
+  },
+  {
+    "id": "207",
+    "manufacturer": "BRITISH",
+    "model_name": "AEROSPACE BAe-146-300"
+  },
+  {
+    "id": "208",
+    "manufacturer": "BRITISH",
+    "model_name": "AEROSPACE BAC One-Eleven"
+  },
+  {
+    "id": "209",
+    "manufacturer": "BRITISH",
+    "model_name": "AEROSPACE AV-8 Harrier"
+  },
+  {
+    "id": "210",
+    "manufacturer": "BRITISH",
+    "model_name": "AEROSPACE Hawk"
+  },
+  {
+    "id": "211",
+    "manufacturer": "BRITISH",
+    "model_name": "AEROSPACE Jetstream 31"
+  },
+  {
+    "id": "212",
+    "manufacturer": "BRITISH",
+    "model_name": "AEROSPACE Jetstream 32"
+  },
+  {
+    "id": "213",
+    "manufacturer": "BRITISH",
+    "model_name": "AEROSPACE Jetstream 41"
+  },
+  {
+    "id": "214",
+    "manufacturer": "BRITTEN-NORMAN",
+    "model_name": "BN-2 Islander"
+  },
+  {
+    "id": "215",
+    "manufacturer": "BRITTEN-NORMAN",
+    "model_name": "BN-2T Turbine Islander"
+  },
+  {
+    "id": "216",
+    "manufacturer": "BRITTEN-NORMAN",
+    "model_name": "BN2A Mk III Trislander"
+  },
+  {
+    "id": "217",
+    "manufacturer": "BUCKER",
+    "model_name": "BU-131 Jungmann"
+  },
+  {
+    "id": "218",
+    "manufacturer": "BUCKER",
+    "model_name": "BU-133 Jungmeister"
+  },
+  {
+    "id": "219",
+    "manufacturer": "CANADAIR",
+    "model_name": "CL-415 SuperScooper"
+  },
+  {
+    "id": "220",
+    "manufacturer": "CASA",
+    "model_name": "C-101 Aviojet"
+  },
+  {
+    "id": "221",
+    "manufacturer": "CASA",
+    "model_name": "C-212 Aviocar"
+  },
+  {
+    "id": "222",
+    "manufacturer": "CASA",
+    "model_name": "CN-235"
+  },
+  {
+    "id": "223",
+    "manufacturer": "CESSNA",
+    "model_name": "206 (turbine)"
+  },
+  {
+    "id": "224",
+    "manufacturer": "CESSNA",
+    "model_name": "207 (turbine)"
+  },
+  {
+    "id": "225",
+    "manufacturer": "CESSNA",
+    "model_name": "P210 (turbine)"
+  },
+  {
+    "id": "226",
+    "manufacturer": "CESSNA",
+    "model_name": "150 Commuter"
+  },
+  {
+    "id": "227",
+    "manufacturer": "CESSNA",
+    "model_name": "152 Aerobat"
+  },
+  {
+    "id": "228",
+    "manufacturer": "CESSNA",
+    "model_name": "162 SkyCatcher"
+  },
+  {
+    "id": "229",
+    "manufacturer": "CESSNA",
+    "model_name": "172 Skyhawk"
+  },
+  {
+    "id": "230",
+    "manufacturer": "CESSNA",
+    "model_name": "177 Cardinal"
+  },
+  {
+    "id": "231",
+    "manufacturer": "CESSNA",
+    "model_name": "182 Skylane"
+  },
+  {
+    "id": "232",
+    "manufacturer": "CESSNA",
+    "model_name": "185 Skywagon"
+  },
+  {
+    "id": "233",
+    "manufacturer": "CESSNA",
+    "model_name": "205 Super Skywagon"
+  },
+  {
+    "id": "234",
+    "manufacturer": "CESSNA",
+    "model_name": "207 Stationair 7"
+  },
+  {
+    "id": "235",
+    "manufacturer": "CESSNA",
+    "model_name": "208 Grand Caravan"
+  },
+  {
+    "id": "236",
+    "manufacturer": "CESSNA",
+    "model_name": "210 Centurion"
+  },
+  {
+    "id": "237",
+    "manufacturer": "CESSNA",
+    "model_name": "525A Citation CJ2"
+  },
+  {
+    "id": "238",
+    "manufacturer": "CESSNA",
+    "model_name": "C-303T"
+  },
+  {
+    "id": "239",
+    "manufacturer": "CESSNA",
+    "model_name": "310"
+  },
+  {
+    "id": "240",
+    "manufacturer": "CESSNA",
+    "model_name": "337 Super Skymaster"
+  },
+  {
+    "id": "241",
+    "manufacturer": "CESSNA",
+    "model_name": "340"
+  },
+  {
+    "id": "242",
+    "manufacturer": "CESSNA",
+    "model_name": "402 Businessliner"
+  },
+  {
+    "id": "243",
+    "manufacturer": "CESSNA",
+    "model_name": "404 Titan"
+  },
+  {
+    "id": "244",
+    "manufacturer": "CESSNA",
+    "model_name": "411"
+  },
+  {
+    "id": "245",
+    "manufacturer": "CESSNA",
+    "model_name": "414 Chancellor"
+  },
+  {
+    "id": "246",
+    "manufacturer": "CESSNA",
+    "model_name": "421 Golden Eagle"
+  },
+  {
+    "id": "247",
+    "manufacturer": "CESSNA",
+    "model_name": "425 Corsair"
+  },
+  {
+    "id": "248",
+    "manufacturer": "CESSNA",
+    "model_name": "441 Conquest 2"
+  },
+  {
+    "id": "249",
+    "manufacturer": "CESSNA",
+    "model_name": "500 Citation"
+  },
+  {
+    "id": "250",
+    "manufacturer": "CESSNA",
+    "model_name": "501 Citation 1SP"
+  },
+  {
+    "id": "251",
+    "manufacturer": "CESSNA",
+    "model_name": "510 Citation Mustang"
+  },
+  {
+    "id": "252",
+    "manufacturer": "CESSNA",
+    "model_name": "525 CitationJet"
+  },
+  {
+    "id": "253",
+    "manufacturer": "CESSNA",
+    "model_name": "550 Citation 2"
+  },
+  {
+    "id": "254",
+    "manufacturer": "CESSNA",
+    "model_name": "551 Citation II SP"
+  },
+  {
+    "id": "255",
+    "manufacturer": "CESSNA",
+    "model_name": "560 Citation 5 Ultra"
+  },
+  {
+    "id": "256",
+    "manufacturer": "CESSNA",
+    "model_name": "560X Citation Excel"
+  },
+  {
+    "id": "257",
+    "manufacturer": "CESSNA",
+    "model_name": "650 Citation 3\/6\/7"
+  },
+  {
+    "id": "258",
+    "manufacturer": "CESSNA",
+    "model_name": "750 Citation 10"
+  },
+  {
+    "id": "259",
+    "manufacturer": "CESSNA",
+    "model_name": "177RG Cardinal RG"
+  },
+  {
+    "id": "260",
+    "manufacturer": "CESSNA",
+    "model_name": "R182"
+  },
+  {
+    "id": "261",
+    "manufacturer": "CESSNA",
+    "model_name": "Caravan 2"
+  },
+  {
+    "id": "262",
+    "manufacturer": "CESSNA",
+    "model_name": "P210 Pressurized Centurion"
+  },
+  {
+    "id": "263",
+    "manufacturer": "CESSNA",
+    "model_name": "318A\/B\/C"
+  },
+  {
+    "id": "264",
+    "manufacturer": "CIRRUS",
+    "model_name": "SF-50 Vision"
+  },
+  {
+    "id": "265",
+    "manufacturer": "CIRRUS",
+    "model_name": "SR-20"
+  },
+  {
+    "id": "266",
+    "manufacturer": "CIRRUS",
+    "model_name": "SR-22"
+  },
+  {
+    "id": "267",
+    "manufacturer": "Comco",
+    "model_name": "Ikarus C-42 Bison"
+  },
+  {
+    "id": "268",
+    "manufacturer": "COMMANDER",
+    "model_name": "112"
+  },
+  {
+    "id": "269",
+    "manufacturer": "CONVAIR",
+    "model_name": "CV-580"
+  },
+  {
+    "id": "270",
+    "manufacturer": "CONVAIR",
+    "model_name": "CV-240 Convairliner"
+  },
+  {
+    "id": "271",
+    "manufacturer": "DASSAULT",
+    "model_name": "Alpha Jet"
+  },
+  {
+    "id": "272",
+    "manufacturer": "DASSAULT",
+    "model_name": "Etendard 4"
+  },
+  {
+    "id": "273",
+    "manufacturer": "DASSAULT",
+    "model_name": "Falcon 2000"
+  },
+  {
+    "id": "274",
+    "manufacturer": "DASSAULT",
+    "model_name": "Falcon 900"
+  },
+  {
+    "id": "275",
+    "manufacturer": "DASSAULT",
+    "model_name": "Falcon 10"
+  },
+  {
+    "id": "276",
+    "manufacturer": "DASSAULT",
+    "model_name": "Falcon 20"
+  },
+  {
+    "id": "277",
+    "manufacturer": "DASSAULT",
+    "model_name": "Falcon 50"
+  },
+  {
+    "id": "278",
+    "manufacturer": "DASSAULT",
+    "model_name": "Falcon 7X"
+  },
+  {
+    "id": "279",
+    "manufacturer": "DASSAULT",
+    "model_name": "Mirage 2000 Vajra"
+  },
+  {
+    "id": "280",
+    "manufacturer": "DASSAULT",
+    "model_name": "Mirage F1"
+  },
+  {
+    "id": "281",
+    "manufacturer": "DASSAULT",
+    "model_name": "Rafale"
+  },
+  {
+    "id": "282",
+    "manufacturer": "DE",
+    "model_name": "HAVILLAND CANADA DHC-3T"
+  },
+  {
+    "id": "283",
+    "manufacturer": "DE",
+    "model_name": "HAVILLAND CANADA Dash 8 Q100"
+  },
+  {
+    "id": "284",
+    "manufacturer": "DE",
+    "model_name": "HAVILLAND CANADA DHC-2"
+  },
+  {
+    "id": "285",
+    "manufacturer": "DE",
+    "model_name": "HAVILLAND CANADA DHC-3"
+  },
+  {
+    "id": "286",
+    "manufacturer": "DE",
+    "model_name": "HAVILLAND CANADA DHC-5"
+  },
+  {
+    "id": "287",
+    "manufacturer": "DE",
+    "model_name": "HAVILLAND CANADA DHC-6"
+  },
+  {
+    "id": "288",
+    "manufacturer": "DE",
+    "model_name": "HAVILLAND CANADA DHC-7"
+  },
+  {
+    "id": "289",
+    "manufacturer": "DE",
+    "model_name": "HAVILLAND CANADA DHC-2T"
+  },
+  {
+    "id": "290",
+    "manufacturer": "DENEL",
+    "model_name": "AH-2 Rooivalk"
+  },
+  {
+    "id": "291",
+    "manufacturer": "DG",
+    "model_name": "FLUGZEUGBAU DG-1000T"
+  },
+  {
+    "id": "292",
+    "manufacturer": "DIAMOND",
+    "model_name": "DA-36 E-Star"
+  },
+  {
+    "id": "293",
+    "manufacturer": "DIAMOND",
+    "model_name": "Twin Star"
+  },
+  {
+    "id": "294",
+    "manufacturer": "DIAMOND",
+    "model_name": "DA50 Super Star"
+  },
+  {
+    "id": "295",
+    "manufacturer": "DIAMOND",
+    "model_name": "HK-36 Super Dimona"
+  },
+  {
+    "id": "296",
+    "manufacturer": "DIAMOND",
+    "model_name": "DV-20 Katana"
+  },
+  {
+    "id": "297",
+    "manufacturer": "DIAMOND",
+    "model_name": "DA40"
+  },
+  {
+    "id": "298",
+    "manufacturer": "DOUGLAS",
+    "model_name": "DC-3"
+  },
+  {
+    "id": "299",
+    "manufacturer": "DOUGLAS",
+    "model_name": "DC-8-50"
+  },
+  {
+    "id": "300",
+    "manufacturer": "DOUGLAS",
+    "model_name": "DC-8-60"
+  },
+  {
+    "id": "301",
+    "manufacturer": "DOUGLAS",
+    "model_name": "DC-8-70"
+  },
+  {
+    "id": "302",
+    "manufacturer": "DOUGLAS",
+    "model_name": "DC-9-10"
+  },
+  {
+    "id": "303",
+    "manufacturer": "DOUGLAS",
+    "model_name": "DC-9-20"
+  },
+  {
+    "id": "304",
+    "manufacturer": "DOUGLAS",
+    "model_name": "DC-9-30"
+  },
+  {
+    "id": "305",
+    "manufacturer": "DOUGLAS",
+    "model_name": "DC-9-40"
+  },
+  {
+    "id": "306",
+    "manufacturer": "DOUGLAS",
+    "model_name": "DC-9-50"
+  },
+  {
+    "id": "307",
+    "manufacturer": "ECLIPSE",
+    "model_name": "Eclipse 500"
+  },
+  {
+    "id": "308",
+    "manufacturer": "EMBRAER",
+    "model_name": "Bandeirante"
+  },
+  {
+    "id": "309",
+    "manufacturer": "EMBRAER",
+    "model_name": "Brasilia"
+  },
+  {
+    "id": "310",
+    "manufacturer": "EMBRAER",
+    "model_name": "Xingu"
+  },
+  {
+    "id": "311",
+    "manufacturer": "EMBRAER",
+    "model_name": "ERJ-135"
+  },
+  {
+    "id": "312",
+    "manufacturer": "EMBRAER",
+    "model_name": "ERJ-145"
+  },
+  {
+    "id": "313",
+    "manufacturer": "EMBRAER",
+    "model_name": "ERJ 170-100"
+  },
+  {
+    "id": "314",
+    "manufacturer": "EMBRAER",
+    "model_name": "ERJ 190-100"
+  },
+  {
+    "id": "315",
+    "manufacturer": "EMBRAER",
+    "model_name": "ERJ 190-200"
+  },
+  {
+    "id": "316",
+    "manufacturer": "EMBRAER",
+    "model_name": "E175-E2"
+  },
+  {
+    "id": "317",
+    "manufacturer": "EMBRAER",
+    "model_name": "E190-E2"
+  },
+  {
+    "id": "318",
+    "manufacturer": "EMBRAER",
+    "model_name": "E195-E2"
+  },
+  {
+    "id": "319",
+    "manufacturer": "EMBRAER",
+    "model_name": "EMB-135BJ Legacy 600"
+  },
+  {
+    "id": "320",
+    "manufacturer": "EMBRAER",
+    "model_name": "ERJ-145XR"
+  },
+  {
+    "id": "321",
+    "manufacturer": "EMBRAER",
+    "model_name": "Phenom 100"
+  },
+  {
+    "id": "322",
+    "manufacturer": "EMBRAER",
+    "model_name": "EMB-545 Legacy 450"
+  },
+  {
+    "id": "323",
+    "manufacturer": "EMBRAER",
+    "model_name": "EMB-550 Legacy 500"
+  },
+  {
+    "id": "324",
+    "manufacturer": "EMBRAER",
+    "model_name": "Phenom 300"
+  },
+  {
+    "id": "325",
+    "manufacturer": "EMBRAER",
+    "model_name": "ERJ 170-200 (long wing)"
+  },
+  {
+    "id": "326",
+    "manufacturer": "EMBRAER",
+    "model_name": "ERJ 170-200 (short wing)"
+  },
+  {
+    "id": "327",
+    "manufacturer": "EMBRAER",
+    "model_name": "A-27 Tucano"
+  },
+  {
+    "id": "328",
+    "manufacturer": "EUROFIGHTER",
+    "model_name": "Eurofighter Typhoon"
+  },
+  {
+    "id": "329",
+    "manufacturer": "EXPLORER",
+    "model_name": "Explorer 500T"
+  },
+  {
+    "id": "330",
+    "manufacturer": "EXTRA",
+    "model_name": "EA-500"
+  },
+  {
+    "id": "331",
+    "manufacturer": "EXTRA",
+    "model_name": "EA-200"
+  },
+  {
+    "id": "332",
+    "manufacturer": "EXTRA",
+    "model_name": "EA-230"
+  },
+  {
+    "id": "333",
+    "manufacturer": "EXTRA",
+    "model_name": "EA-300"
+  },
+  {
+    "id": "334",
+    "manufacturer": "EXTRA",
+    "model_name": "EA-400"
+  },
+  {
+    "id": "335",
+    "manufacturer": "FAIRCHILD",
+    "model_name": "A-10 Thunderbolt 2"
+  },
+  {
+    "id": "336",
+    "manufacturer": "FAIRCHILD",
+    "model_name": "DORNIER 228"
+  },
+  {
+    "id": "337",
+    "manufacturer": "FAIRCHILD",
+    "model_name": "DORNIER 328"
+  },
+  {
+    "id": "338",
+    "manufacturer": "FAIRCHILD",
+    "model_name": "DORNIER 328JET"
+  },
+  {
+    "id": "339",
+    "manufacturer": "FFA",
+    "model_name": "AS-202 Bravo"
+  },
+  {
+    "id": "340",
+    "manufacturer": "FFA",
+    "model_name": "AS-202-32TP Turbine Bravo"
+  },
+  {
+    "id": "341",
+    "manufacturer": "FOKKER",
+    "model_name": "F100"
+  },
+  {
+    "id": "342",
+    "manufacturer": "FOKKER",
+    "model_name": "F-27 Friendship"
+  },
+  {
+    "id": "343",
+    "manufacturer": "FOKKER",
+    "model_name": "F-28 Fellowship"
+  },
+  {
+    "id": "344",
+    "manufacturer": "FOKKER",
+    "model_name": "F50"
+  },
+  {
+    "id": "345",
+    "manufacturer": "FOKKER",
+    "model_name": "F70"
+  },
+  {
+    "id": "346",
+    "manufacturer": "FOUGA",
+    "model_name": "CM-175 Zephyr"
+  },
+  {
+    "id": "347",
+    "manufacturer": "GANZAVIA",
+    "model_name": "GAK-22 Dino"
+  },
+  {
+    "id": "348",
+    "manufacturer": "GATES",
+    "model_name": "LEARJET Learjet 28"
+  },
+  {
+    "id": "349",
+    "manufacturer": "GATES",
+    "model_name": "LEARJET Learjet 31"
+  },
+  {
+    "id": "350",
+    "manufacturer": "GATES",
+    "model_name": "LEARJET Learjet 35"
+  },
+  {
+    "id": "351",
+    "manufacturer": "GATES",
+    "model_name": "LEARJET Learjet 55"
+  },
+  {
+    "id": "352",
+    "manufacturer": "GENERAL",
+    "model_name": "ATOMICS AERONAUTICAL SYSTEMS MQ-9 Reaper"
+  },
+  {
+    "id": "353",
+    "manufacturer": "GENERAL",
+    "model_name": "DYNAMICS F-111 Aardvark"
+  },
+  {
+    "id": "354",
+    "manufacturer": "GENERAL",
+    "model_name": "DYNAMICS F-16 Fighting Falcon"
+  },
+  {
+    "id": "355",
+    "manufacturer": "GROB",
+    "model_name": "G-109 Ranger"
+  },
+  {
+    "id": "356",
+    "manufacturer": "GROB",
+    "model_name": "G-115"
+  },
+  {
+    "id": "357",
+    "manufacturer": "GRUMMAN",
+    "model_name": "A-6"
+  },
+  {
+    "id": "358",
+    "manufacturer": "GRUMMAN",
+    "model_name": "F-14 Tomcat"
+  },
+  {
+    "id": "359",
+    "manufacturer": "GRUMMAN",
+    "model_name": "Gulfstream I"
+  },
+  {
+    "id": "360",
+    "manufacturer": "GRUMMAN",
+    "model_name": "G73T Turbo Mallard"
+  },
+  {
+    "id": "361",
+    "manufacturer": "GRUMMAN",
+    "model_name": "Gulfstream 2"
+  },
+  {
+    "id": "362",
+    "manufacturer": "GRUMMAN",
+    "model_name": "Daya"
+  },
+  {
+    "id": "363",
+    "manufacturer": "GULFSTREAM",
+    "model_name": "AEROSPACE 695 Jetprop Commander 1000"
+  },
+  {
+    "id": "364",
+    "manufacturer": "GULFSTREAM",
+    "model_name": "AEROSPACE Gulfstream G280"
+  },
+  {
+    "id": "365",
+    "manufacturer": "GULFSTREAM",
+    "model_name": "AEROSPACE Gulfstream 3"
+  },
+  {
+    "id": "366",
+    "manufacturer": "GULFSTREAM",
+    "model_name": "AEROSPACE Gulfstream 4"
+  },
+  {
+    "id": "367",
+    "manufacturer": "GULFSTREAM",
+    "model_name": "AEROSPACE Gulfstream 5"
+  },
+  {
+    "id": "368",
+    "manufacturer": "GULFSTREAM",
+    "model_name": "AEROSPACE G650"
+  },
+  {
+    "id": "369",
+    "manufacturer": "HANDLEY",
+    "model_name": "PAGE HP-137 Jetstream"
+  },
+  {
+    "id": "370",
+    "manufacturer": "HAWKER",
+    "model_name": "SIDDELEY HS-748"
+  },
+  {
+    "id": "371",
+    "manufacturer": "HAWKER",
+    "model_name": "SIDDELEY Hunter"
+  },
+  {
+    "id": "372",
+    "manufacturer": "HINDUSTAN",
+    "model_name": "ALH Dhruv"
+  },
+  {
+    "id": "373",
+    "manufacturer": "HONDA",
+    "model_name": "HA-420 HondaJet"
+  },
+  {
+    "id": "374",
+    "manufacturer": "HUGHES",
+    "model_name": "369"
+  },
+  {
+    "id": "375",
+    "manufacturer": "HUGHES",
+    "model_name": "AH-64 Apache"
+  },
+  {
+    "id": "376",
+    "manufacturer": "IAI",
+    "model_name": "1125 Astra"
+  },
+  {
+    "id": "377",
+    "manufacturer": "IAI",
+    "model_name": "1126 Galaxy"
+  },
+  {
+    "id": "378",
+    "manufacturer": "IAI",
+    "model_name": "1121 Jet Commander"
+  },
+  {
+    "id": "379",
+    "manufacturer": "IAI",
+    "model_name": "1124 Westwind"
+  },
+  {
+    "id": "380",
+    "manufacturer": "ILYUSHIN",
+    "model_name": "Il-18\/20\/22\/24"
+  },
+  {
+    "id": "381",
+    "manufacturer": "ILYUSHIN",
+    "model_name": "Il-38"
+  },
+  {
+    "id": "382",
+    "manufacturer": "ILYUSHIN",
+    "model_name": "Il-62"
+  },
+  {
+    "id": "383",
+    "manufacturer": "ILYUSHIN",
+    "model_name": "Il-76"
+  },
+  {
+    "id": "384",
+    "manufacturer": "ILYUSHIN",
+    "model_name": "Il-86\/87"
+  },
+  {
+    "id": "385",
+    "manufacturer": "ILYUSHIN",
+    "model_name": "Il-96"
+  },
+  {
+    "id": "386",
+    "manufacturer": "IRKUT",
+    "model_name": "A-002"
+  },
+  {
+    "id": "387",
+    "manufacturer": "JABIRU",
+    "model_name": "Jabiru J230"
+  },
+  {
+    "id": "388",
+    "manufacturer": "JODEL",
+    "model_name": "D-150 Mascaret"
+  },
+  {
+    "id": "389",
+    "manufacturer": "JUNKERS",
+    "model_name": "Junkers Ju 52"
+  },
+  {
+    "id": "390",
+    "manufacturer": "JURCA",
+    "model_name": "MJ-2 Tempete"
+  },
+  {
+    "id": "391",
+    "manufacturer": "KAMAN",
+    "model_name": "Seasprite"
+  },
+  {
+    "id": "392",
+    "manufacturer": "KAMAN",
+    "model_name": "K-1200 K-Max"
+  },
+  {
+    "id": "393",
+    "manufacturer": "KAMOV",
+    "model_name": "Ka-32"
+  },
+  {
+    "id": "394",
+    "manufacturer": "KAMOV",
+    "model_name": "Ka-50"
+  },
+  {
+    "id": "395",
+    "manufacturer": "KAMOV",
+    "model_name": "Ka-52"
+  },
+  {
+    "id": "396",
+    "manufacturer": "KAWASAKI",
+    "model_name": "OH-1"
+  },
+  {
+    "id": "397",
+    "manufacturer": "KHRUNICHEV",
+    "model_name": "T-411 Aist"
+  },
+  {
+    "id": "398",
+    "manufacturer": "LAKE",
+    "model_name": "Renegade"
+  },
+  {
+    "id": "399",
+    "manufacturer": "LAKE",
+    "model_name": "Buccaneer"
+  },
+  {
+    "id": "400",
+    "manufacturer": "LANCAIR",
+    "model_name": "Evolution Piston"
+  },
+  {
+    "id": "401",
+    "manufacturer": "LANCAIR",
+    "model_name": "Evolution Turbine"
+  },
+  {
+    "id": "402",
+    "manufacturer": "LANCAIR",
+    "model_name": "Lancair 320"
+  },
+  {
+    "id": "403",
+    "manufacturer": "LANCAIR",
+    "model_name": "Lancair 4"
+  },
+  {
+    "id": "404",
+    "manufacturer": "LANCAIR",
+    "model_name": "Lancair ES"
+  },
+  {
+    "id": "405",
+    "manufacturer": "LANCAIR",
+    "model_name": "Lancair PropJet 4"
+  },
+  {
+    "id": "406",
+    "manufacturer": "LANCAIR",
+    "model_name": "Sentry 4T"
+  },
+  {
+    "id": "407",
+    "manufacturer": "LANCAIR",
+    "model_name": "Synergy"
+  },
+  {
+    "id": "408",
+    "manufacturer": "LEAR",
+    "model_name": "JET Learjet 23"
+  },
+  {
+    "id": "409",
+    "manufacturer": "LEAR",
+    "model_name": "JET Learjet 24"
+  },
+  {
+    "id": "410",
+    "manufacturer": "LEAR",
+    "model_name": "JET Learjet 25"
+  },
+  {
+    "id": "411",
+    "manufacturer": "LEARJET",
+    "model_name": "Learjet 40"
+  },
+  {
+    "id": "412",
+    "manufacturer": "LEARJET",
+    "model_name": "45"
+  },
+  {
+    "id": "413",
+    "manufacturer": "LEARJET",
+    "model_name": "Learjet 60"
+  },
+  {
+    "id": "414",
+    "manufacturer": "LET",
+    "model_name": "L-410\/420"
+  },
+  {
+    "id": "415",
+    "manufacturer": "LET",
+    "model_name": "L-610"
+  },
+  {
+    "id": "416",
+    "manufacturer": "LOCKHEED",
+    "model_name": "C-130"
+  },
+  {
+    "id": "417",
+    "manufacturer": "LOCKHEED",
+    "model_name": "C-141 Starlifter"
+  },
+  {
+    "id": "418",
+    "manufacturer": "LOCKHEED",
+    "model_name": "C-5 Galaxy"
+  },
+  {
+    "id": "419",
+    "manufacturer": "LOCKHEED",
+    "model_name": "F-104 Starfighter"
+  },
+  {
+    "id": "420",
+    "manufacturer": "LOCKHEED",
+    "model_name": "F-117 Nighthawk"
+  },
+  {
+    "id": "421",
+    "manufacturer": "LOCKHEED",
+    "model_name": "TriStar"
+  },
+  {
+    "id": "422",
+    "manufacturer": "LOCKHEED",
+    "model_name": "Electra"
+  },
+  {
+    "id": "423",
+    "manufacturer": "LOCKHEED",
+    "model_name": "Jetstar 2\/731"
+  },
+  {
+    "id": "424",
+    "manufacturer": "LOCKHEED",
+    "model_name": "Orion"
+  },
+  {
+    "id": "425",
+    "manufacturer": "LOCKHEED",
+    "model_name": "MARTIN C-130J Hercules"
+  },
+  {
+    "id": "426",
+    "manufacturer": "LOCKHEED",
+    "model_name": "MARTIN L-645 Raptor"
+  },
+  {
+    "id": "427",
+    "manufacturer": "MBB",
+    "model_name": "Bo 105"
+  },
+  {
+    "id": "428",
+    "manufacturer": "MBB",
+    "model_name": "BK 117"
+  },
+  {
+    "id": "429",
+    "manufacturer": "MCDONNELL",
+    "model_name": "DOUGLAS DC-10"
+  },
+  {
+    "id": "430",
+    "manufacturer": "MCDONNELL",
+    "model_name": "DOUGLAS F-4 Phantom"
+  },
+  {
+    "id": "431",
+    "manufacturer": "MCDONNELL",
+    "model_name": "DOUGLAS MD-11"
+  },
+  {
+    "id": "432",
+    "manufacturer": "MCDONNELL",
+    "model_name": "DOUGLAS MD-81"
+  },
+  {
+    "id": "433",
+    "manufacturer": "MCDONNELL",
+    "model_name": "DOUGLAS MD-82"
+  },
+  {
+    "id": "434",
+    "manufacturer": "MCDONNELL",
+    "model_name": "DOUGLAS MD-83"
+  },
+  {
+    "id": "435",
+    "manufacturer": "MCDONNELL",
+    "model_name": "DOUGLAS MD-87"
+  },
+  {
+    "id": "436",
+    "manufacturer": "MCDONNELL",
+    "model_name": "DOUGLAS MD-88"
+  },
+  {
+    "id": "437",
+    "manufacturer": "MCDONNELL",
+    "model_name": "DOUGLAS MD-90"
+  },
+  {
+    "id": "438",
+    "manufacturer": "MELEX",
+    "model_name": "Turbine Dromader"
+  },
+  {
+    "id": "439",
+    "manufacturer": "MIKOYAN",
+    "model_name": "MiG-21"
+  },
+  {
+    "id": "440",
+    "manufacturer": "MIKOYAN",
+    "model_name": "MiG-23 Bahadur"
+  },
+  {
+    "id": "441",
+    "manufacturer": "MIKOYAN",
+    "model_name": "MiG-29 Baaz"
+  },
+  {
+    "id": "442",
+    "manufacturer": "MIKOYAN",
+    "model_name": "MiG-31 Foxhound"
+  },
+  {
+    "id": "443",
+    "manufacturer": "MIKOYAN",
+    "model_name": "MiG-25 Foxbat"
+  },
+  {
+    "id": "444",
+    "manufacturer": "MIL",
+    "model_name": "Mi-26"
+  },
+  {
+    "id": "445",
+    "manufacturer": "MIL",
+    "model_name": "Mi-38"
+  },
+  {
+    "id": "446",
+    "manufacturer": "MIL",
+    "model_name": "Mi-171"
+  },
+  {
+    "id": "447",
+    "manufacturer": "MITSUBISHI",
+    "model_name": "LR-1"
+  },
+  {
+    "id": "448",
+    "manufacturer": "MUDRY",
+    "model_name": "CAP-20"
+  },
+  {
+    "id": "449",
+    "manufacturer": "MUDRY",
+    "model_name": "CAP-230\/231\/232"
+  },
+  {
+    "id": "450",
+    "manufacturer": "MYASISHCHEV",
+    "model_name": "M-101 Expedition"
+  },
+  {
+    "id": "451",
+    "manufacturer": "MYASISHCHEV",
+    "model_name": "M-17 Stratosfera"
+  },
+  {
+    "id": "452",
+    "manufacturer": "MYASISHCHEV",
+    "model_name": "M-55 Geophysica"
+  },
+  {
+    "id": "453",
+    "manufacturer": "NORTH",
+    "model_name": "AMERICAN T-6 Harvard"
+  },
+  {
+    "id": "454",
+    "manufacturer": "NORTH",
+    "model_name": "AMERICAN ROCKWELL Commander 500"
+  },
+  {
+    "id": "455",
+    "manufacturer": "NORTH",
+    "model_name": "AMERICAN ROCKWELL Commander 680FL"
+  },
+  {
+    "id": "456",
+    "manufacturer": "NORTH",
+    "model_name": "AMERICAN ROCKWELL Turbo Commander 680"
+  },
+  {
+    "id": "457",
+    "manufacturer": "NORTH",
+    "model_name": "AMERICAN ROCKWELL Turbo Commander 690"
+  },
+  {
+    "id": "458",
+    "manufacturer": "NORTHROP",
+    "model_name": "B-2 Spirit"
+  },
+  {
+    "id": "459",
+    "manufacturer": "NORTHROP",
+    "model_name": "F-5 Freedom Fighter"
+  },
+  {
+    "id": "460",
+    "manufacturer": "NORTHROP",
+    "model_name": "AT-38 Talon"
+  },
+  {
+    "id": "461",
+    "manufacturer": "PANAVIA",
+    "model_name": "Tornado"
+  },
+  {
+    "id": "462",
+    "manufacturer": "PIAGGIO",
+    "model_name": "P-180 Avanti"
+  },
+  {
+    "id": "463",
+    "manufacturer": "PIAGGIO",
+    "model_name": "P-166B Portofino"
+  },
+  {
+    "id": "464",
+    "manufacturer": "PIAGGIO",
+    "model_name": "P-166DP1"
+  },
+  {
+    "id": "465",
+    "manufacturer": "PIAGGIO",
+    "model_name": "PD-808"
+  },
+  {
+    "id": "466",
+    "manufacturer": "PIEL",
+    "model_name": "CP-30 Emeraude"
+  },
+  {
+    "id": "467",
+    "manufacturer": "PIEL",
+    "model_name": "CP-70 Beryl"
+  },
+  {
+    "id": "468",
+    "manufacturer": "PIEL",
+    "model_name": "CP-80 Zephir"
+  },
+  {
+    "id": "469",
+    "manufacturer": "PILATUS",
+    "model_name": "PC-12 Eagle"
+  },
+  {
+    "id": "470",
+    "manufacturer": "PILATUS",
+    "model_name": "PC-21"
+  },
+  {
+    "id": "471",
+    "manufacturer": "PILATUS",
+    "model_name": "PC-24"
+  },
+  {
+    "id": "472",
+    "manufacturer": "PILATUS",
+    "model_name": "Chiricahua"
+  },
+  {
+    "id": "473",
+    "manufacturer": "PILATUS",
+    "model_name": "PC-7 Astra"
+  },
+  {
+    "id": "474",
+    "manufacturer": "PILATUS",
+    "model_name": "PC-9 Beech"
+  },
+  {
+    "id": "475",
+    "manufacturer": "PIPER",
+    "model_name": "Cherokee (PA-28-140\/150\/160\/180)"
+  },
+  {
+    "id": "476",
+    "manufacturer": "PIPER",
+    "model_name": "PA-28-235 Cherokee Charger"
+  },
+  {
+    "id": "477",
+    "manufacturer": "PIPER",
+    "model_name": "PA-28R-180 Cherokee Arrow"
+  },
+  {
+    "id": "478",
+    "manufacturer": "PIPER",
+    "model_name": "PA-28RT-201T Turbo Arrow 4"
+  },
+  {
+    "id": "479",
+    "manufacturer": "PIPER",
+    "model_name": "PA-32R"
+  },
+  {
+    "id": "480",
+    "manufacturer": "PIPER",
+    "model_name": "PA-32RT-300 Lance 2"
+  },
+  {
+    "id": "481",
+    "manufacturer": "PIPER",
+    "model_name": "PA-46-500TP Malibu Meridian"
+  },
+  {
+    "id": "482",
+    "manufacturer": "PIPER",
+    "model_name": "L-18C"
+  },
+  {
+    "id": "483",
+    "manufacturer": "PIPER",
+    "model_name": "PA-23-Aztec"
+  },
+  {
+    "id": "484",
+    "manufacturer": "PIPER",
+    "model_name": "Aztec"
+  },
+  {
+    "id": "485",
+    "manufacturer": "PIPER",
+    "model_name": "PA-31"
+  },
+  {
+    "id": "486",
+    "manufacturer": "PIPER",
+    "model_name": "PA32-260 Cherokee Six"
+  },
+  {
+    "id": "487",
+    "manufacturer": "PIPER",
+    "model_name": "PA-34 Seneca"
+  },
+  {
+    "id": "488",
+    "manufacturer": "PIPER",
+    "model_name": "PA-38 Tomahawk"
+  },
+  {
+    "id": "489",
+    "manufacturer": "PIPER",
+    "model_name": "Seminole"
+  },
+  {
+    "id": "490",
+    "manufacturer": "PIPER",
+    "model_name": "PA-46-310P Malibu"
+  },
+  {
+    "id": "491",
+    "manufacturer": "PIPER",
+    "model_name": "PA-47 PiperJet"
+  },
+  {
+    "id": "492",
+    "manufacturer": "Pagination",
+    "model_name": ""
+  },
+  {
+    "id": "493",
+    "manufacturer": "PIPER",
+    "model_name": "Cheyenne 1"
+  },
+  {
+    "id": "494",
+    "manufacturer": "PIPER",
+    "model_name": "Cheyenne 2"
+  },
+  {
+    "id": "495",
+    "manufacturer": "PIPER",
+    "model_name": "Cheyenne 3"
+  },
+  {
+    "id": "496",
+    "manufacturer": "PIPER",
+    "model_name": "Cheyenne 400"
+  },
+  {
+    "id": "497",
+    "manufacturer": "PZL-MIELEC",
+    "model_name": "An-2"
+  },
+  {
+    "id": "498",
+    "manufacturer": "PZL-MIELEC",
+    "model_name": "An-28"
+  },
+  {
+    "id": "499",
+    "manufacturer": "PZL-MIELEC",
+    "model_name": "Dromader"
+  },
+  {
+    "id": "500",
+    "manufacturer": "PZL-OKECIE",
+    "model_name": "PZL-104 Wilga"
+  },
+  {
+    "id": "501",
+    "manufacturer": "RAYTHEON",
+    "model_name": "BAe-125-700\/800"
+  },
+  {
+    "id": "502",
+    "manufacturer": "RAYTHEON",
+    "model_name": "BAe-125-1000"
+  },
+  {
+    "id": "503",
+    "manufacturer": "RAYTHEON",
+    "model_name": "390 Premier 1"
+  },
+  {
+    "id": "504",
+    "manufacturer": "ROBIN",
+    "model_name": "DR-400 Cadet"
+  },
+  {
+    "id": "505",
+    "manufacturer": "ROBIN",
+    "model_name": "R-1180 Aiglon"
+  },
+  {
+    "id": "506",
+    "manufacturer": "ROBINSON",
+    "model_name": "R-22"
+  },
+  {
+    "id": "507",
+    "manufacturer": "ROBINSON",
+    "model_name": "R-44"
+  },
+  {
+    "id": "508",
+    "manufacturer": "ROCKWELL",
+    "model_name": "B-1 Lancer"
+  },
+  {
+    "id": "509",
+    "manufacturer": "ROCKWELL",
+    "model_name": "NA-265 Sabre 60"
+  },
+  {
+    "id": "510",
+    "manufacturer": "ROCKWELL",
+    "model_name": "NA-265 Sabre 75"
+  },
+  {
+    "id": "511",
+    "manufacturer": "RUTAN",
+    "model_name": "Space Ship Two"
+  },
+  {
+    "id": "512",
+    "manufacturer": "SAAB",
+    "model_name": "105"
+  },
+  {
+    "id": "513",
+    "manufacturer": "SAAB",
+    "model_name": "2000"
+  },
+  {
+    "id": "514",
+    "manufacturer": "SAAB",
+    "model_name": "Viggen"
+  },
+  {
+    "id": "515",
+    "manufacturer": "SAAB",
+    "model_name": "Gripen"
+  },
+  {
+    "id": "516",
+    "manufacturer": "SAAB",
+    "model_name": "340"
+  },
+  {
+    "id": "517",
+    "manufacturer": "SCHEIBE",
+    "model_name": "SF-25 Falke"
+  },
+  {
+    "id": "518",
+    "manufacturer": "SCHLEICHER",
+    "model_name": "ASH-25"
+  },
+  {
+    "id": "519",
+    "manufacturer": "SEPECAT",
+    "model_name": "Jaguar"
+  },
+  {
+    "id": "520",
+    "manufacturer": "SHORT",
+    "model_name": "SC-7"
+  },
+  {
+    "id": "521",
+    "manufacturer": "SHORT",
+    "model_name": "330"
+  },
+  {
+    "id": "522",
+    "manufacturer": "SHORT",
+    "model_name": "SD3-360"
+  },
+  {
+    "id": "523",
+    "manufacturer": "SIKORSKY",
+    "model_name": "TH-53"
+  },
+  {
+    "id": "524",
+    "manufacturer": "SIKORSKY",
+    "model_name": "CH-53E Super Stallion"
+  },
+  {
+    "id": "525",
+    "manufacturer": "SIKORSKY",
+    "model_name": "UH-60 Black Hawk"
+  },
+  {
+    "id": "526",
+    "manufacturer": "SIKORSKY",
+    "model_name": "S-61"
+  },
+  {
+    "id": "527",
+    "manufacturer": "SIKORSKY",
+    "model_name": "S-61R"
+  },
+  {
+    "id": "528",
+    "manufacturer": "SIKORSKY",
+    "model_name": "S-76"
+  },
+  {
+    "id": "529",
+    "manufacturer": "SIKORSKY",
+    "model_name": "S-92"
+  },
+  {
+    "id": "530",
+    "manufacturer": "SOCATA",
+    "model_name": "Commodore"
+  },
+  {
+    "id": "531",
+    "manufacturer": "SOCATA",
+    "model_name": "Tampico"
+  },
+  {
+    "id": "532",
+    "manufacturer": "SOCATA",
+    "model_name": "TB-30 Epsilon"
+  },
+  {
+    "id": "533",
+    "manufacturer": "SOCATA",
+    "model_name": "TB-31 Omega"
+  },
+  {
+    "id": "534",
+    "manufacturer": "SOCATA",
+    "model_name": "TBM-700"
+  },
+  {
+    "id": "535",
+    "manufacturer": "SOCATA",
+    "model_name": "TBM-850"
+  },
+  {
+    "id": "536",
+    "manufacturer": "SOCATA",
+    "model_name": "Tobago"
+  },
+  {
+    "id": "537",
+    "manufacturer": "SOCATA",
+    "model_name": "Trinidad"
+  },
+  {
+    "id": "538",
+    "manufacturer": "SOLOY",
+    "model_name": "Pathfinder 21"
+  },
+  {
+    "id": "539",
+    "manufacturer": "SUKHOI",
+    "model_name": "Su-17"
+  },
+  {
+    "id": "540",
+    "manufacturer": "SUKHOI",
+    "model_name": "Su-24"
+  },
+  {
+    "id": "541",
+    "manufacturer": "SUKHOI",
+    "model_name": "Su-25"
+  },
+  {
+    "id": "542",
+    "manufacturer": "SUKHOI",
+    "model_name": "Su-27"
+  },
+  {
+    "id": "543",
+    "manufacturer": "SUKHOI",
+    "model_name": "Su-80"
+  },
+  {
+    "id": "544",
+    "manufacturer": "SUKHOI",
+    "model_name": "Superjet 100-95"
+  },
+  {
+    "id": "545",
+    "manufacturer": "SWEARINGEN",
+    "model_name": "SJ-30"
+  },
+  {
+    "id": "546",
+    "manufacturer": "SWEARINGEN",
+    "model_name": "Merlin 2"
+  },
+  {
+    "id": "547",
+    "manufacturer": "SWEARINGEN",
+    "model_name": "Merlin 3"
+  },
+  {
+    "id": "548",
+    "manufacturer": "SWEARINGEN",
+    "model_name": "Metroliner"
+  },
+  {
+    "id": "549",
+    "manufacturer": "SWEARINGEN",
+    "model_name": "SX-300"
+  },
+  {
+    "id": "550",
+    "manufacturer": "TRANSALL",
+    "model_name": "C-160"
+  },
+  {
+    "id": "551",
+    "manufacturer": "TUPOLEV",
+    "model_name": "Tu-134"
+  },
+  {
+    "id": "552",
+    "manufacturer": "TUPOLEV",
+    "model_name": "Tu-154"
+  },
+  {
+    "id": "553",
+    "manufacturer": "TUPOLEV",
+    "model_name": "Tu-160"
+  },
+  {
+    "id": "554",
+    "manufacturer": "TUPOLEV",
+    "model_name": "Tu-204"
+  },
+  {
+    "id": "555",
+    "manufacturer": "TUPOLEV",
+    "model_name": "Tu-22M"
+  },
+  {
+    "id": "556",
+    "manufacturer": "TUPOLEV",
+    "model_name": "TU-95"
+  },
+  {
+    "id": "557",
+    "manufacturer": "Various",
+    "model_name": "Glider"
+  },
+  {
+    "id": "558",
+    "manufacturer": "Various",
+    "model_name": "Ultralight\/Microlight Aircraft Types"
+  },
+  {
+    "id": "559",
+    "manufacturer": "VICKERS",
+    "model_name": "VC-10"
+  },
+  {
+    "id": "560",
+    "manufacturer": "VICKERS",
+    "model_name": "Viscount"
+  },
+  {
+    "id": "561",
+    "manufacturer": "VULCANAIR",
+    "model_name": "Observer"
+  },
+  {
+    "id": "562",
+    "manufacturer": "XIAN",
+    "model_name": "Xian MA60"
+  },
+  {
+    "id": "563",
+    "manufacturer": "YAKOVLEV",
+    "model_name": "Yak-40"
+  },
+  {
+    "id": "564",
+    "manufacturer": "YAKOVLEV",
+    "model_name": "Yak-42"
+  },
+  {
+    "id": "565",
+    "manufacturer": "ZENAIR",
+    "model_name": "CH-100 Mono-Zenith"
+  },
+  {
+    "id": "566",
+    "manufacturer": "ZENAIR",
+    "model_name": "CH-150 Acro-Zenith"
+  },
+  {
+    "id": "567",
+    "manufacturer": "ZENAIR",
+    "model_name": "CH-180 Super Acro-Zenith"
+  },
+  {
+    "id": "568",
+    "manufacturer": "ZENAIR",
+    "model_name": "Zenith (CH-200)"
+  },
+  {
+    "id": "569",
+    "manufacturer": "ZENAIR",
+    "model_name": "Zenith (CH-250)"
+  },
+  {
+    "id": "570",
+    "manufacturer": "ZENAIR",
+    "model_name": "Zenith (CH-2000)"
+  },
+  {
+    "id": "571",
+    "manufacturer": "ZENAIR",
+    "model_name": "CH-300 Tri-Zenith"
+  },
+  {
+    "id": "572",
+    "manufacturer": "ZENAIR",
+    "model_name": "CH-50 Mini Zenith"
+  }
+]

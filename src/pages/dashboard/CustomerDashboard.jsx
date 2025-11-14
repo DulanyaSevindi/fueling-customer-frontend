@@ -9,6 +9,10 @@ import Footer from "../../components/Footer.jsx";
 export default function CustomerDashboard() {
     const navigate = useNavigate();
     const [searchCountry, setSearchCountry] = useState("");
+    const [selectedDate, setSelectedDate] = useState(() => {
+        const today = new Date();
+        return today.toISOString().split("T")[0]; // default today
+    });
     const [suppliers, setSuppliers] = useState([]);
     const [loading, setLoading] = useState(false);
     const [showResults, setShowResults] = useState(false);
@@ -36,14 +40,37 @@ export default function CustomerDashboard() {
                     if (country.countryName?.toLowerCase() === searchCountry.toLowerCase()) {
                         country.airports?.forEach((airport) => {
                             airport.prices?.forEach((price) => {
-                                countrySuppliers.push({
-                                    supplierName: supplier.supplierName,
-                                    supplierId: supplier.id,
-                                    status: supplier.status,
-                                    country: country.countryName,
-                                    airport: airport.airportName,
-                                    baseFare: price.baseFare,
-                                });
+                                if (selectedDate) {
+                                    const selected = new Date(selectedDate);
+                                    const from = new Date(price.validFrom);
+                                    const to = price.validTo ? new Date(price.validTo) : null;
+
+                                    // Include only if selected date is within range
+                                    if (selected >= from && (!to || selected <= to)) {
+                                        countrySuppliers.push({
+                                            supplierName: supplier.supplierName,
+                                            supplierId: supplier.id,
+                                            status: supplier.status,
+                                            country: country.countryName,
+                                            airport: airport.airportName,
+                                            baseFare: price.baseFare,
+                                            validFrom: price.validFrom,
+                                            validTo: price.validTo,
+                                        });
+                                    }
+                                } else {
+                                    // If no date filter, include all
+                                    countrySuppliers.push({
+                                        supplierName: supplier.supplierName,
+                                        supplierId: supplier.id,
+                                        status: supplier.status,
+                                        country: country.countryName,
+                                        airport: airport.airportName,
+                                        baseFare: price.baseFare,
+                                        validFrom: price.validFrom,
+                                        validTo: price.validTo,
+                                    });
+                                }
                             });
                         });
                     }
@@ -103,29 +130,56 @@ export default function CustomerDashboard() {
                         </p>
 
                         {/* Search Box */}
-                        <div className="w-full max-w-6xl bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 relative">
-                            <div className="absolute inset-0 bg-white/90 rounded-2xl"></div>
-                            <div className="relative z-10 grid md:grid-cols-4 gap-6">
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Country</label>
+                        <div className="w-full max-w-5xl bg-white rounded-2xl shadow-2xl p-8">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                {/* Country Input */}
+                                <div className="w-full">
+                                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                                        Country
+                                    </label>
                                     <div className="relative">
-                                        <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
+                                        <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                                         <input
                                             type="text"
                                             value={searchCountry}
                                             onChange={(e) => setSearchCountry(e.target.value)}
-                                            placeholder="Enter country"
-                                            className="w-full pl-10 pr-4 py-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                                            placeholder="e.g., Sri Lanka"
+                                            className="w-full pl-12 pr-4 py-3.5 text-base border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-[#1C2554] focus:border-[#1C2554] transition-all outline-none"
                                         />
                                     </div>
                                 </div>
 
-                                <div className="flex items-end">
+                                {/* Date Input */}
+                                <div className="w-full">
+                                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                                        Date
+                                    </label>
+                                    <input
+                                        type="date"
+                                        value={selectedDate}
+                                        onChange={(e) => setSelectedDate(e.target.value)}
+                                        className="w-full px-4 py-3.5 text-base border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-[#1C2554] focus:border-[#1C2554] transition-all outline-none"
+                                    />
+                                </div>
+
+                                {/* Search Button */}
+                                <div className="w-full flex items-end">
                                     <button
                                         onClick={handleSearch}
-                                        className="w-full bg-gradient-to-r from-[#1C2554] to-[#BE965B] hover:from-blue-950 hover:to-blue-950 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
+                                        disabled={loading}
+                                        className="w-full bg-gradient-to-r from-[#1C2554] to-[#BE965B] hover:from-[#BE965B] hover:to-[#1C2554] disabled:from-gray-400 disabled:to-gray-500 disabled:cursor-not-allowed text-white font-semibold py-3.5 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0"
                                     >
-                                        {loading ? "Searching..." : <><Search size={20} /> Search</>}
+                                        {loading ? (
+                                            <>
+                                                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                                Searching...
+                                            </>
+                                        ) : (
+                                            <>
+                                                <Search size={20} />
+                                                Search
+                                            </>
+                                        )}
                                     </button>
                                 </div>
                             </div>
@@ -150,7 +204,7 @@ export default function CustomerDashboard() {
                             </div>
                             <button
                                 onClick={handleCloseResults}
-                                className="text-white !hover:text-gray-700 !bg-black font-semibold transition-colors px-3 py-1 rounded"
+                                className="text-white hover:text-gray-700 !bg-black hover:bg-gray-200 font-semibold transition-colors px-4 py-2 rounded-lg"
                             >
                                 ✕ Close
                             </button>
@@ -204,20 +258,35 @@ export default function CustomerDashboard() {
                                                 </span>
                                             </div>
 
-                                            <div className="mb-4">
+                                            <div className="mb-2">
                                                 <span className="text-gray-800 font-semibold">
                                                     Base Price: ${supplier.baseFare}
                                                 </span>
                                             </div>
 
+                                            {/* Validity Range */}
+                                            <div className="text-xs text-gray-500 mt-2">
+                                                <p>Valid From: {supplier.validFrom ? new Date(supplier.validFrom).toLocaleDateString() : "-"}</p>
+                                                <p>Valid To: {supplier.validTo ? new Date(supplier.validTo).toLocaleDateString() : "-"}</p>
+                                            </div>
+
                                             <button
-                                                onClick={() =>
-                                                    navigate(`/supplier/${supplier.supplierId}?country=${encodeURIComponent(supplier.country)}&airport=${encodeURIComponent(supplier.airport)}`)
-                                                }
-                                                className="w-full bg-gradient-to-r from-[#1C2554] to-[#BE965B] hover:from-[#BE965B] hover:to-[#1C2554] text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform group-hover:scale-105"
+                                                onClick={() => navigate(`/request-fuel/${supplier.supplierId}`)}
+                                                className="w-full mt-4 bg-gradient-to-r from-[#1C2554] to-[#BE965B] hover:from-[#BE965B] hover:to-[#1C2554] text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform group-hover:scale-105 flex items-center justify-center gap-2"
                                             >
-                                                View Details
+                                                <span>Request Fuel</span>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    strokeWidth={2}
+                                                    stroke="currentColor"
+                                                    className="w-5 h-5"
+                                                >
+                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12l-3.75 3.75M3 12h18" />
+                                                </svg>
                                             </button>
+
                                         </div>
                                     </div>
                                 ))}

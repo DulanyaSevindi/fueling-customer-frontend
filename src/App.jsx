@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import CustomerProfile from "./pages/profile/CustomerProfile.jsx";
+import RequestFuel from "./pages/dashboard/RequestFuel.jsx";
 
 const Login = lazy(() => import("./pages/auth/Login.jsx"));
 const CustomerDashboard = lazy(() => import("./pages/dashboard/CustomerDashboard.jsx"))
@@ -17,6 +18,7 @@ function App() {
                     <Route path="/dashboard" element={<CustomerDashboard />} />
                     <Route path="/profile" element={<CustomerProfile />} />
                     <Route path="/" element={<ViewDetails />} />
+                    <Route path="/request-fuel/:supplierId" element={<RequestFuel />} />
                 </Routes>
             </Suspense>
         </Router>
