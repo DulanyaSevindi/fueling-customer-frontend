@@ -1,8 +1,24 @@
 import React from "react";
 import { Plane, FileText, X } from "lucide-react";
 
-export default function AddAircraftPopup({ show, onClose, newAircraftData, handleChange, handleAdd }) {
+export default function AddAircraftPopup({
+                                             show,
+                                             onClose,
+                                             newAircraftData,
+                                             handleChange,
+                                             handleAdd, // parent function to save aircraft to DB
+                                         }) {
     if (!show) return null;
+
+    // Simple local validation before calling parent
+    const handleAddClick = () => {
+        if (!newAircraftData.aircraftTypeId || !newAircraftData.prefix || !newAircraftData.number) {
+            alert("Fill all aircraft details");
+            return;
+        }
+
+        handleAdd(); // call parent to save to DB
+    };
 
     return (
         <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
@@ -14,30 +30,32 @@ export default function AddAircraftPopup({ show, onClose, newAircraftData, handl
                         </div>
                         <h2 className="text-3xl font-bold text-gray-800">Add New Aircraft</h2>
                     </div>
-                    <button
-                        onClick={onClose}
-                        className="text-gray-400 hover:text-gray-600 transition-colors"
-                    >
+                    <button onClick={onClose} className="text-gray-400 hover:text-gray-600 transition-colors">
                         <X size={32} />
                     </button>
                 </div>
 
                 <div className="space-y-6">
-                    {/* Aircraft Type */}
+                    {/* Aircraft Type from local JSON */}
                     <div>
                         <label className="flex items-center gap-2 text-sm font-bold text-gray-700 mb-3">
                             <Plane size={18} className="text-green-600" /> Aircraft Type *
                         </label>
                         <select
-                            name="aircraftType"
-                            value={newAircraftData.aircraftType}
+                            name="aircraftTypeId"
+                            value={newAircraftData.aircraftTypeId || ""}
                             onChange={handleChange}
-                            className="w-full border-2 border-gray-300 rounded-xl px-4 py-4 text-lg outline-none focus:border-green-600 focus:ring-2 focus:ring-green-200"
                         >
                             <option value="">Select aircraft type</option>
-                            {newAircraftData.flightModels?.map((fm) => (
-                                <option key={fm.id} value={fm.model_name}>{fm.model_name}</option>
+                            {newAircraftData.flightModels?.map((fm, idx) => (
+                                <option
+                                    key={`${fm.aircraftTypeId}-${fm.manufacturer}-${fm.model_name}-${idx}`}
+                                    value={fm.aircraftTypeId}
+                                >
+                                    {fm.manufacturer} - {fm.model_name}
+                                </option>
                             ))}
+
                         </select>
                     </div>
 
@@ -48,23 +66,24 @@ export default function AddAircraftPopup({ show, onClose, newAircraftData, handl
                         </label>
                         <select
                             name="prefix"
-                            value={newAircraftData.prefix || ""}   // <- always a string
+                            value={newAircraftData.prefix || ""}
                             onChange={handleChange}
-                            className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-lg outline-none focus:border-green-600 focus:ring-2 focus:ring-green-200"
                         >
                             <option value="">Select prefix</option>
                             {Array.isArray(newAircraftData.prefixes) &&
-                                newAircraftData.prefixes.map((ac) => (
-                                    <option key={ac.id} value={ac.prefix}>
+                                newAircraftData.prefixes.map((ac, idx) => (
+                                    <option
+                                        key={`${ac.prefix}-${ac.country}-${idx}`}
+                                        value={ac.prefix}
+                                    >
                                         {ac.prefix} - {ac.country}
                                     </option>
-                                ))
-                            }
-                        </select>
+                                ))}
 
+                        </select>
                     </div>
 
-                    {/* Number */}
+                    {/* Registration Number */}
                     <div>
                         <label className="flex items-center gap-2 text-sm font-bold text-gray-700 mb-3">
                             <FileText size={18} className="text-green-600" /> Registration Number *
@@ -90,7 +109,7 @@ export default function AddAircraftPopup({ show, onClose, newAircraftData, handl
                     )}
                 </div>
 
-                {/* Action Buttons */}
+                {/* Buttons */}
                 <div className="flex gap-4 mt-8">
                     <button
                         className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700 py-4 text-lg rounded-xl font-bold transition-colors"
@@ -100,7 +119,7 @@ export default function AddAircraftPopup({ show, onClose, newAircraftData, handl
                     </button>
                     <button
                         className="flex-1 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-4 text-lg rounded-xl font-bold transition-all shadow-lg"
-                        onClick={handleAdd}
+                        onClick={handleAddClick}
                     >
                         Add Aircraft
                     </button>

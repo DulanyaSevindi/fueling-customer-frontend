@@ -271,7 +271,11 @@ export default function CustomerDashboard() {
                                             </div>
 
                                             <button
-                                                onClick={() => navigate(`/request-fuel/${supplier.supplierId}`)}
+                                                onClick={() =>
+                                                    navigate(`/request-fuel/${supplier.supplierId}`, {
+                                                        state: { customerId: user.id }   // <-- Pass Customer ID
+                                                    })
+                                                }
                                                 className="w-full mt-4 bg-gradient-to-r from-[#1C2554] to-[#BE965B] hover:from-[#BE965B] hover:to-[#1C2554] text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform group-hover:scale-105 flex items-center justify-center gap-2"
                                             >
                                                 <span>Request Fuel</span>
