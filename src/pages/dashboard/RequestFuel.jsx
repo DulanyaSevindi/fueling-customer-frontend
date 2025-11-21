@@ -7,11 +7,13 @@ import aircraftRegistrations from "../../data/AircraftRegistration.json";
 import AddAircraftPopup from "../../components/AddAircraftPopup.jsx";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Lottie from "lottie-react";
+import submissionAnimation from "../../assets/Email Send.json";
 
 export default function RequestFuel() {
     const location = useLocation();
     const navigate = useNavigate();
-    const customerId = location.state?.customerId || 123;
+    const customerId = location.state?.customerId || null;
 
     const [formData, setFormData] = useState({
         operatorName: "",
@@ -31,7 +33,6 @@ export default function RequestFuel() {
     const [aircraftTypes, setAircraftTypes] = useState([]);
     const [selectedAircraftId, setSelectedAircraftId] = useState(null);
     const [selectedAircraftTypeId, setSelectedAircraftTypeId] = useState(null);
-    const [showSubmitGif, setShowSubmitGif] = useState(false);
 
 
     const [showAddAircraftPopup, setShowAddAircraftPopup] = useState(false);
@@ -45,6 +46,8 @@ export default function RequestFuel() {
 
     const [loading, setLoading] = useState(false);
     const [supplier] = useState({ supplierName: "ABC Fuel Supplies", supplierId: "supplier_123" });
+    const [showSubmissionAnimation, setShowSubmissionAnimation] = useState(false);
+
 
     // Prevent swipe navigation
     useEffect(() => {
@@ -208,6 +211,7 @@ export default function RequestFuel() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
+        setShowSubmissionAnimation(true); // show Lottie animation
 
         try {
             const payload = {
@@ -245,8 +249,7 @@ export default function RequestFuel() {
                 { headers: { Authorization: `Bearer ${localStorage.getItem("customerToken")}` } }
             );
 
-            alert("Fuel request submitted!");
-
+            // Reset form after submission
             setFormData({
                 operatorName: "",
                 aircraftPrefix: "",
@@ -263,13 +266,19 @@ export default function RequestFuel() {
             setSelectedAircraftId(null);
             setSelectedAircraftTypeId(null);
             setNewAircraftData(prev => ({ ...prev, aircraftTypeId: "", prefix: "", number: "" }));
+
+            // Hide animation after 2 seconds
+            setTimeout(() => setShowSubmissionAnimation(false), 2000);
+
         } catch (err) {
             console.error("Error submitting request:", err.response?.data || err.message);
             alert(err.response?.data?.message || "Failed to submit request");
+            setShowSubmissionAnimation(false);
         } finally {
             setLoading(false);
         }
     };
+
 
     return (
         <div className="fixed inset-0 flex flex-col bg-gradient-to-br from-[#1C2554] to-[#BE965B] overflow-auto" style={{ overscrollBehaviorX: 'none' }}>
@@ -568,6 +577,14 @@ export default function RequestFuel() {
                 handleAdd={handleAddNewAircraft}
                 aircraftTypes={aircraftTypes}
             />
+            {/* Submission Lottie Animation */}
+            {showSubmissionAnimation && (
+                <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex flex-col items-center justify-center z-50">
+                    <Lottie animationData={submissionAnimation} loop={false} className="w-40 h-40" />
+                    <h1 className="mt-4 text-white text-2xl font-bold animate-pulse">Submitted!</h1>
+                </div>
+            )}
+
         </div>
     );
 }
